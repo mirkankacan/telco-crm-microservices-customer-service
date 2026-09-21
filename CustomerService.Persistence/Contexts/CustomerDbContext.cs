@@ -10,7 +10,7 @@ namespace CustomerService.Persistence.Contexts
         public CustomerDbContext(DbContextOptions<CustomerDbContext> options) : base(options)
         {
         }
-        public DbSet<ContactMedium> Addresses { get; set; }
+        public DbSet<Address> Addresses { get; set; }
         public DbSet<BillingAccount> BillingAccounts { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<ContactMedium> ContactMediums { get; set; }
