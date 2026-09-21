@@ -1,0 +1,11 @@
+services:
+  customer_db:
+    image: postgres 
+    container_name: customer_db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123456aA*
+      POSTGRES_DB: customer_db
+
