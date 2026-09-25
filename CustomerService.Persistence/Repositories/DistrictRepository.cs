@@ -5,9 +5,9 @@ using CustomerService.Persistence.Contexts;
 
 namespace CustomerService.Persistence.Repositories
 {
-    public class AddressRepository : EfRepositoryBase<Address, Guid, CustomerDbContext>, IAddressRepository
+    public class DistrictRepository : EfRepositoryBase<District, short, CustomerDbContext>, IDistrictRepository
     {
-        public AddressRepository(CustomerDbContext context) : base(context)
+        public DistrictRepository(CustomerDbContext context) : base(context)
         {
         }
 
